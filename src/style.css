@@ -1,0 +1,33 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #352208;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container h1 {
+	color: #e1bb80;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 1em;
+		grid-row-gap: 1rem;
+	}
+}
